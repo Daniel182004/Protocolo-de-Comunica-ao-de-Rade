@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Protocolo de Comunicaça de Rade</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            /* Градиент */
+            background: linear-gradient(#3aa31f, #13a0d8) fixed;
+        }
+
+        p {
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: center;
+        }
+
+        li {
+            font-family: "Trebuchet MS", Verdana, sans-serif
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: capitalize;
+            text-shadow: 4px 4px 5px rgb(8, 48, 13);
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+
+        iframe {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        button {
+            min-width: 100px;
+            font-family: inherit;
+            appearance: none;
+            border: 0;
+            border-radius: 5px;
+            background: #4676d7;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background: #1d49aa;
+            text-decoration: none;
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px #cbd6ee;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="body-title">Protocolo de Comunicaçao de Rade</h1>
+    <h1 class="alt-title">RDP</h1>
+    <p>RDP (Remote Desktop Protocol) é um protocolo para conectar um usuário a
+        uma área de trabalho remota por meio de um servidor de terminal.
+        A tecnologia surgiu na década de 90 e é usada até hoje. O desenvolvimento
+        é totalmente proprietário, é fornecido apenas em sistemas operacionais da
+        família Windows.
+        No entanto, você pode se conectar por meio de outros sistemas operacionais
+        usando aplicativos de terceiros.</p>
+
+    <ul>
+        <li>
+            Conexão de protocolo ao sistema operacional do
+            servidor para configuração ou gerenciamento. Isso
+            ocorre porque o Windows Server oferece suporte a duas
+            conexões remotas e um logon local em paralelo, enquanto as estações
+            de trabalho oferecem suporte a apenas uma opção.</li>
+        <li>
+            O RDP serve como um transporte para se conectar a um servidor
+            de terminal.
+            Este modo está disponível apenas para sistemas operacionais de
+            servidor. O número de conexões é ilimitado, mas você precisará instalar
+            um servidor de licenças.</li>
+        <li>
+            Conexão a uma estação de trabalho. O usuário, usando o RDP,
+            conecta-se ao computador do escritório ou de casa para continuar trabalhando.</li>
+    </ul>
+    <img alt="rdp3" width="500" height="200" src="https://cryptoshitcompra.com/wp-content/uploads/2022/02/What-Is-RDP-An-Introduction-Guide.png">
+    <p>Se você deseja estabelecer uma conexão entre o sistema
+        operacional da família Windows e o Linux, para o segundo,
+        use aplicativos que suportem o trabalho com o protocolo
+        RDP, por exemplo, Remmina, Rdesktop, Vinagre, etc.</p>
+    <section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SCLw3YMgrp0" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <p>Princípio da Operação
+        O RDP é baseado no protocolo TCP. A conexão cliente-servidor ocorre na camada de transporte. Após a
+        inicialização, o usuário é autenticado. Em caso de confirmação bem-sucedida, o servidor transfere o controle
+        para o cliente.
+
+        O protocolo RDP suporta internamente canais virtuais,
+        através do qual funções adicionais do sistema operacional são transferidas para o usuário, por exemplo, você
+        pode imprimir um documento,
+        reproduzir um vídeo ou copiar um arquivo para a área de transferência.</p>
+    <img alt="rdp1" width="500" height="300" src="https://comphome.ru/wp-content/uploads/page/rdp.jpg">
+    <p>Segurança
+        A tecnologia oferece segurança de conexão de duas maneiras. O primeiro usa um subsistema interno (Standard RDP
+        Security). Um par de chaves RSA e um certificado de chave pública são gerados na máquina remota e assinados por
+        um deles.
+
+        Durante a conexão, o cliente recebe um certificado assinado e uma chave pública,
+        que é usado para selecionar a tecnologia de criptografia de dados. O comprimento da chave de criptografia
+        depende da versão do sistema operacional; em versões mais antigas do Windows Server 2008, o valor era de 168
+        bits. A autorização ocorre após a confirmação do certificado e digitação da senha.
+        O segundo método sugere o uso de ferramentas de segurança externas (Enhanced RDP Security). Como exemplo, vamos
+        falar sobre o protocolo TLS. Durante a inicialização da conexão, ele criptografa a conexão e verifica a
+        permissão do usuário para efetuar login.
+        Essa abordagem reduz a carga no servidor de terminal com um grande número de conexões simultâneas. O princípio
+        de operação é semelhante à primeira opção. Via de regra, as grandes empresas usam a segunda opção e as pequenas
+        empresas a primeira.
+
+        O protocolo RDP é usado para conexão remota apenas no ambiente Windows. A conexão é totalmente segura,
+        porque usa criptografia e procedimento de autenticação do usuário. Para outros sistemas operacionais, existe um
+        software especial que suporta o trabalho com RDP.</p>
+    <button><a href="https://itglobal.com/ru-ru/company/glossary/rdp/">Fonte</a></button>
+</body>
+
+</html>
