@@ -1,0 +1,15 @@
+button{
+    background-color: white;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color:black;
+    box-shadow:110cm;}
+
+body{
+    background-color: rgb(177, 177, 177);
+    color:black ;
+    margin-left: 25%;
+    margin-right:25% ;
+    margin-top:5%;
+    margin-bottom:5%;
+}
